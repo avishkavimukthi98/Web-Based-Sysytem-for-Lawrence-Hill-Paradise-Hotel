@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <link rel="stylesheet" href="navfooter.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <a class="navbar-brand" href="#"><img src=""></a>
+        <a href="#" class="logo">LAWRENCE HILL PARADISE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.php" onclick="toggleMenu();">Home</a></li>
+            <li><a href="Aboutus.php" onclick="toggleMenu();">About</a></li>
+            <li><a href="" onclick="toggleMenu();">Reservation</a></li>
+            <li><a href="gallery.php" onclick="toggleMenu();">Gallery</a></li>
+            <li><a href="contact.php" onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="contact.php" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+     </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h3><span>A</span>bout <span>U</span>s</h3>
+            <p> Lawrence Hill Paradise Ayurveda Centrum is a certified and authentic ayurvedic treatment resort in Hikkaduwa, Sri Lanka. Established in 2001, we have been providing affordable, holistic herbal cures for those seeking to de-stress, detox, relax and find relief through ayurvedic medicine and a healthy ayurvedic diet and lifestyle. Whether you prefer a wellness holiday or a more immersive healing experience; we have got it all.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="about" id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>V</span>ision</h2>
+                    <p>  Proudly opening doors to the true spirit of a destination.</p>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="images/img3.jpg" alt="one">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mission" id="mission">
+            <div class="row1">
+                <div class="col501">
+                    <h2 class="titleText1"><span>M</span>ission</h2>
+                    <p> We are a luxury brand whose incredible family of associates puts the soul in hospitality every day. The needs of our guests, associates and owners are in the forefront of everything we do. Through authenticity and innovation, we create unique memorable experiences.</p>
+                </div>
+                <div class="col501">
+                    <div class="imgBx1">
+                        <img src="images/img15.jpg" alt="one">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    
+    </script>
+       
+
+</body>
+</html>
